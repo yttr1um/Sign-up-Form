@@ -3,12 +3,17 @@
     src: url(./fonts/Norse-Bold.otf);
 }
 
+:root {
+    --light-grey: #f6f5f4;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
+    font-family: Helvetica, sans-serif;
     display: flex;
 }
 
@@ -61,17 +66,77 @@ body {
 #right {
     width: 70vw;
     height: 100vh;
-    background-color: #f6f5f4;
+    background-color: var(--light-grey);
 
     display: flex;
     flex-direction: column;
 }
 
-#right > div {
+#top-txt, #acc-btn {
     flex: 1;
 }
 
-#sign-up-form {
+#top-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 25px;
+    padding: 0 250px 20px 50px;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+span {
+    font-style: italic;
+}
+
+#sign-up-form {box-sizing: border-box;
     background-color: white;
     box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.15);
+    flex: 0 0 35vh;
+    padding: 15px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    display:flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#sign-up-form h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex: 1;
+}
+
+form > div {
+    flex: 1;
+    display: flex;
+    gap: 75px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.col > div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #333;
+    letter-spacing: 2px;
+}
+
+input {
+    height: 30px;
+    width: 40vh;
+    border: 2px solid var(--light-grey);
+    border-radius: 5px;
 }
