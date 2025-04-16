@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+}
+
+#left {
+    width: 25vw;
+    height: 100vh;
+    background-color: red;
+}
+
+#right {
+    width: 75vw;
+    height: 100vh;
+    background-color: blue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#signup-form-container {
+    background-color: green;
+}
+
+#form {
+    background-color: yellow;
+}
