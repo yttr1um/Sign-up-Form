@@ -149,7 +149,8 @@ input:focus {
 
 input:invalid {
     outline: none;
-    border-color: rgb(230, 0, 0);
+    border: 2px solid rgb(230, 0, 0);
+    box-shadow: none;
 }
 
 #acc-btn {
